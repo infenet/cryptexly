@@ -42,8 +42,8 @@ func TestAuth(t *testing.T) {
 	}{
 		{"Incorrect login and pass", "test", "test", false},
 		{"Correct login and incorrect pass", "cryptexly", "test", false},
-		{"Incorrect login and correct pass", "test", "cryptexly", false},
-		{"Correct login and pass", "cryptexly", "cryptexly", true},
+		{"Incorrect login and correct pass", "test", "arc", false},
+		{"Correct login and pass", "arc", "arc", true},
 		{"Empty credantials", "", "", false},
 	}
 
@@ -64,9 +64,9 @@ func TestHashPassword(t *testing.T) {
 	}{
 		//bcrypt cost can be between 4 and 31. 10 is the default value
 		{"Empty password", "", 10, "$2a$10$4UW2Nvp9QglqZZDDayfJcOfk7shblk3a9/voRPPt8dmK4mTiKBr9q"},
-		{"cryptexly password", "cryptexly", 10, "$2a$10$gwnHUhLVV9tgPtZfX4.jDOz6qzGgRHZmtE2YpMr9K1RpIO71YJViO"},
+		{"cryptexly password", "arc", 10, "$2a$10$RuOcSEwPNNFlA/lxjpRY3.3J0tR0LG/FyfG/IXolgdDxPh7.urgGe"},
 		// NOTE: same password can have different hashes
-		{"cryptexly password with another hash", "cryptexly", 10, "$2a$10$Z/YHAyjeJk47AbnpEZ/xneqFYioTKZlQiSB3W5OEe6MKNHQxT2vbS"},
+		{"cryptexly password with another hash", "arc", 10, "$2a$10$Z/YHAyjeJk47AbnpEZ/xneqFYioTKZlQiSB3W5OEe6MKNHQxT2vbS"},
 	}
 
 	for _, tt := range tests {
