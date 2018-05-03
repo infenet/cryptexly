@@ -41,7 +41,7 @@ func TestAuth(t *testing.T) {
 		exp      bool
 	}{
 		{"Incorrect login and pass", "test", "test", false},
-		{"Correct login and incorrect pass", "cryptexly", "test", false},
+		{"Correct login and incorrect pass", "arc", "test", false},
 		{"Incorrect login and correct pass", "test", "arc", false},
 		{"Correct login and pass", "arc", "arc", true},
 		{"Empty credantials", "", "", false},
