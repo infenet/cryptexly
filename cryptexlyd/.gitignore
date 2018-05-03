@@ -1,0 +1,5 @@
+_vendor
+cryptexlyd
+config.json
+*.db
+gomake.json
