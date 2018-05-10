@@ -28,12 +28,6 @@ Records are generated, encrypted and decrypted **client side** by `cryptexly` (w
 
 Elements can be created (with optional expiration dates), arranged and edited using `cryptexly` and are stored on `cryptexlyd` as AES256 encrypted (and compressed) raw data.
 
-<p align="center">
-    <a href="https://www.youtube.com/watch?v=8iG7rHXZtiA">
-        <img src="https://img.youtube.com/vi/8iG7rHXZtiA/hqdefault.jpg" alt="random demo"/>
-    </a>
-</p>
-
 ## Hardware? 
 
 Ideally `cryptexlyd` should run on a dedicated portable hardware like a Raspberry Pi Zero, for instance it is possible to simply access it via Bluetooth and a modern browser once configured [btnap](https://github.com/bablokb/pi-btnap), but precompiled versions are available for [several operating systems and architectures](https://github.com/detroitcybersec/cryptexly/releases) (including ARM, ARM64 and MIPS) therefore Cryptexly can run on pretty much everything with a CPU, from [your smartphone](https://twitter.com/detroitcybersec/status/942846649713426434), your router, your Mac or your Windows computer. As a rule of thumb, the more [isolated](https://en.wikipedia.org/wiki/Compartmentalization_(information_security)) the hardware is, the better.
