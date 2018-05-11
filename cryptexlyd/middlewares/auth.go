@@ -8,11 +8,11 @@
 package middlewares
 
 import (
-	"github.com/dgrijalva/jwt-go"
 	"github.com/detroitcybersec/cryptexly/cryptexlyd/config"
 	"github.com/detroitcybersec/cryptexly/cryptexlyd/events"
 	"github.com/detroitcybersec/cryptexly/cryptexlyd/log"
 	"github.com/detroitcybersec/cryptexly/cryptexlyd/utils"
+	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
 	"regexp"
 	"strings"
